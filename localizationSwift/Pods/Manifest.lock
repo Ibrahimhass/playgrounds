@@ -1,0 +1,12 @@
+PODS:
+  - YoutubeSourceParserKit (0.2.4)
+
+DEPENDENCIES:
+  - YoutubeSourceParserKit
+
+SPEC CHECKSUMS:
+  YoutubeSourceParserKit: d1506222a62718ed41f18ab52ebbc1b1d9ecabcc
+
+PODFILE CHECKSUM: d5598e7ab713c156f789b13b82bd452895006f76
+
+COCOAPODS: 1.1.1
