@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB30129F1ED15918005684FF /* tableViewCell12.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB30129E1ED15918005684FF /* tableViewCell12.swift */; };
-		DB6ADB101ECA04BD003082F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADB0F1ECA04BD003082F8 /* AppDelegate.swift */; };
-		DB6ADB121ECA04BD003082F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADB111ECA04BD003082F8 /* ViewController.swift */; };
-		DB6ADB151ECA04BD003082F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6ADB131ECA04BD003082F8 /* Main.storyboard */; };
-		DB6ADB171ECA04BD003082F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6ADB161ECA04BD003082F8 /* Assets.xcassets */; };
-		DB6ADB1A1ECA04BD003082F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6ADB181ECA04BD003082F8 /* LaunchScreen.storyboard */; };
+		DB7396261EED1302009D91D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7396251EED1302009D91D7 /* AppDelegate.swift */; };
+		DB7396281EED1302009D91D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7396271EED1302009D91D7 /* ViewController.swift */; };
+		DB73962B1EED1302009D91D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7396291EED1302009D91D7 /* Main.storyboard */; };
+		DB73962D1EED1302009D91D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB73962C1EED1302009D91D7 /* Assets.xcassets */; };
+		DB7396301EED1302009D91D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB73962E1EED1302009D91D7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB30129E1ED15918005684FF /* tableViewCell12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewCell12.swift; sourceTree = "<group>"; };
-		DB6ADB0C1ECA04BD003082F8 /* IHPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IHPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB6ADB0F1ECA04BD003082F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB6ADB111ECA04BD003082F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB6ADB141ECA04BD003082F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DB6ADB161ECA04BD003082F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB6ADB191ECA04BD003082F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DB6ADB1B1ECA04BD003082F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB7396221EED1302009D91D7 /* webViewAppTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webViewAppTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7396251EED1302009D91D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB7396271EED1302009D91D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB73962A1EED1302009D91D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB73962C1EED1302009D91D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB73962F1EED1302009D91D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB7396311EED1302009D91D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DB6ADB091ECA04BD003082F8 /* Frameworks */ = {
+		DB73961F1EED1302009D91D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,79 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB6ADB031ECA04BD003082F8 = {
+		DB7396191EED1302009D91D7 = {
 			isa = PBXGroup;
 			children = (
-				DB6ADB0E1ECA04BD003082F8 /* IHPlayer */,
-				DB6ADB0D1ECA04BD003082F8 /* Products */,
+				DB7396241EED1302009D91D7 /* webViewAppTrial */,
+				DB7396231EED1302009D91D7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DB6ADB0D1ECA04BD003082F8 /* Products */ = {
+		DB7396231EED1302009D91D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB6ADB0C1ECA04BD003082F8 /* IHPlayer.app */,
+				DB7396221EED1302009D91D7 /* webViewAppTrial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB6ADB0E1ECA04BD003082F8 /* IHPlayer */ = {
+		DB7396241EED1302009D91D7 /* webViewAppTrial */ = {
 			isa = PBXGroup;
 			children = (
-				DB6ADB0F1ECA04BD003082F8 /* AppDelegate.swift */,
-				DB6ADB111ECA04BD003082F8 /* ViewController.swift */,
-				DB6ADB131ECA04BD003082F8 /* Main.storyboard */,
-				DB30129E1ED15918005684FF /* tableViewCell12.swift */,
-				DB6ADB161ECA04BD003082F8 /* Assets.xcassets */,
-				DB6ADB181ECA04BD003082F8 /* LaunchScreen.storyboard */,
-				DB6ADB1B1ECA04BD003082F8 /* Info.plist */,
+				DB7396251EED1302009D91D7 /* AppDelegate.swift */,
+				DB7396271EED1302009D91D7 /* ViewController.swift */,
+				DB7396291EED1302009D91D7 /* Main.storyboard */,
+				DB73962C1EED1302009D91D7 /* Assets.xcassets */,
+				DB73962E1EED1302009D91D7 /* LaunchScreen.storyboard */,
+				DB7396311EED1302009D91D7 /* Info.plist */,
 			);
-			path = IHPlayer;
+			path = webViewAppTrial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DB6ADB0B1ECA04BD003082F8 /* IHPlayer */ = {
+		DB7396211EED1302009D91D7 /* webViewAppTrial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB6ADB1E1ECA04BD003082F8 /* Build configuration list for PBXNativeTarget "IHPlayer" */;
+			buildConfigurationList = DB7396341EED1302009D91D7 /* Build configuration list for PBXNativeTarget "webViewAppTrial" */;
 			buildPhases = (
-				DB6ADB081ECA04BD003082F8 /* Sources */,
-				DB6ADB091ECA04BD003082F8 /* Frameworks */,
-				DB6ADB0A1ECA04BD003082F8 /* Resources */,
+				DB73961E1EED1302009D91D7 /* Sources */,
+				DB73961F1EED1302009D91D7 /* Frameworks */,
+				DB7396201EED1302009D91D7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = IHPlayer;
-			productName = IHPlayer;
-			productReference = DB6ADB0C1ECA04BD003082F8 /* IHPlayer.app */;
+			name = webViewAppTrial;
+			productName = webViewAppTrial;
+			productReference = DB7396221EED1302009D91D7 /* webViewAppTrial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DB6ADB041ECA04BD003082F8 /* Project object */ = {
+		DB73961A1EED1302009D91D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Md Ibrahim Hassan";
 				TargetAttributes = {
-					DB6ADB0B1ECA04BD003082F8 = {
+					DB7396211EED1302009D91D7 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = RP4PNYFADM;
 						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
 					};
 				};
 			};
-			buildConfigurationList = DB6ADB071ECA04BD003082F8 /* Build configuration list for PBXProject "IHPlayer" */;
+			buildConfigurationList = DB73961D1EED1302009D91D7 /* Build configuration list for PBXProject "webViewAppTrial" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,55 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = DB6ADB031ECA04BD003082F8;
-			productRefGroup = DB6ADB0D1ECA04BD003082F8 /* Products */;
+			mainGroup = DB7396191EED1302009D91D7;
+			productRefGroup = DB7396231EED1302009D91D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB6ADB0B1ECA04BD003082F8 /* IHPlayer */,
+				DB7396211EED1302009D91D7 /* webViewAppTrial */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DB6ADB0A1ECA04BD003082F8 /* Resources */ = {
+		DB7396201EED1302009D91D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB6ADB1A1ECA04BD003082F8 /* LaunchScreen.storyboard in Resources */,
-				DB6ADB171ECA04BD003082F8 /* Assets.xcassets in Resources */,
-				DB6ADB151ECA04BD003082F8 /* Main.storyboard in Resources */,
+				DB7396301EED1302009D91D7 /* LaunchScreen.storyboard in Resources */,
+				DB73962D1EED1302009D91D7 /* Assets.xcassets in Resources */,
+				DB73962B1EED1302009D91D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DB6ADB081ECA04BD003082F8 /* Sources */ = {
+		DB73961E1EED1302009D91D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB6ADB121ECA04BD003082F8 /* ViewController.swift in Sources */,
-				DB6ADB101ECA04BD003082F8 /* AppDelegate.swift in Sources */,
-				DB30129F1ED15918005684FF /* tableViewCell12.swift in Sources */,
+				DB7396281EED1302009D91D7 /* ViewController.swift in Sources */,
+				DB7396261EED1302009D91D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB6ADB131ECA04BD003082F8 /* Main.storyboard */ = {
+		DB7396291EED1302009D91D7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB6ADB141ECA04BD003082F8 /* Base */,
+				DB73962A1EED1302009D91D7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DB6ADB181ECA04BD003082F8 /* LaunchScreen.storyboard */ = {
+		DB73962E1EED1302009D91D7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB6ADB191ECA04BD003082F8 /* Base */,
+				DB73962F1EED1302009D91D7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -173,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DB6ADB1C1ECA04BD003082F8 /* Debug */ = {
+		DB7396321EED1302009D91D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		DB6ADB1D1ECA04BD003082F8 /* Release */ = {
+		DB7396331EED1302009D91D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,64 +256,51 @@
 			};
 			name = Release;
 		};
-		DB6ADB1F1ECA04BD003082F8 /* Debug */ = {
+		DB7396351EED1302009D91D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RP4PNYFADM;
-				INFOPLIST_FILE = IHPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				INFOPLIST_FILE = webViewAppTrial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "IbrahimH-ss-n.IHPlayer12";
+				PRODUCT_BUNDLE_IDENTIFIER = "IbrahimH-ss-n.webViewAppTrial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		DB6ADB201ECA04BD003082F8 /* Release */ = {
+		DB7396361EED1302009D91D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RP4PNYFADM;
-				INFOPLIST_FILE = IHPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				INFOPLIST_FILE = webViewAppTrial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "IbrahimH-ss-n.IHPlayer12";
+				PRODUCT_BUNDLE_IDENTIFIER = "IbrahimH-ss-n.webViewAppTrial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB6ADB071ECA04BD003082F8 /* Build configuration list for PBXProject "IHPlayer" */ = {
+		DB73961D1EED1302009D91D7 /* Build configuration list for PBXProject "webViewAppTrial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB6ADB1C1ECA04BD003082F8 /* Debug */,
-				DB6ADB1D1ECA04BD003082F8 /* Release */,
+				DB7396321EED1302009D91D7 /* Debug */,
+				DB7396331EED1302009D91D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB6ADB1E1ECA04BD003082F8 /* Build configuration list for PBXNativeTarget "IHPlayer" */ = {
+		DB7396341EED1302009D91D7 /* Build configuration list for PBXNativeTarget "webViewAppTrial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB6ADB1F1ECA04BD003082F8 /* Debug */,
-				DB6ADB201ECA04BD003082F8 /* Release */,
+				DB7396351EED1302009D91D7 /* Debug */,
+				DB7396361EED1302009D91D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DB6ADB041ECA04BD003082F8 /* Project object */;
+	rootObject = DB73961A1EED1302009D91D7 /* Project object */;
 }

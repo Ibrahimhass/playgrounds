@@ -10,25 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IHPlayer/ViewController.swift"
-            timestampString = "517037373.869635"
+            timestampString = "518397054.605097"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IHPlayer/ViewController.swift"
-            timestampString = "517037373.869635"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209">
+            startingLineNumber = "325"
+            endingLineNumber = "325">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
