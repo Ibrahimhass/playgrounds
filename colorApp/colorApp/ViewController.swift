@@ -8,11 +8,10 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSTextFieldDelegate, NSTextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +20,17 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+    
+    @IBOutlet weak var blueTextField: NSTextField!
+    @IBOutlet weak var greenTextField: NSTextField!
+    @IBOutlet weak var redTextField: NSTextField!
+//    func controlTextDidChange(obj: NSNotification) {
+//        let characterSet: NSCharacterSet = NSCharacterSet(charactersIn: "0123456789.").inverted as NSCharacterSet
+//        self.blueTextField.stringValue = (self.blueTextField.stringValue.componentsSeparatedByCharactersInSet(characterSet) as NSArray).componentsJoinedByString("")
+//            self.greenTextField.stringValue = (self.greenTextField.stringValue.componentsSeparatedByCharactersInSet(characterSet) as NSArray).componentsJoinedByString("")
+//            self.redTextField.stringValue = (self.redTextField.stringValue.componentsSeparatedByCharactersInSet(characterSet) as NSArray).componentsJoinedByString("")
+//    }
+//    
 
 
 }

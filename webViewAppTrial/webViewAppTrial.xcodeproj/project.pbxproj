@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB03EAB41EF855F1003A4254 /* animationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB03EAB31EF855F1003A4254 /* animationViewController.swift */; };
 		DB7396261EED1302009D91D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7396251EED1302009D91D7 /* AppDelegate.swift */; };
 		DB7396281EED1302009D91D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7396271EED1302009D91D7 /* ViewController.swift */; };
 		DB73962B1EED1302009D91D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7396291EED1302009D91D7 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB03EAB31EF855F1003A4254 /* animationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animationViewController.swift; sourceTree = "<group>"; };
 		DB7396221EED1302009D91D7 /* webViewAppTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webViewAppTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7396251EED1302009D91D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB7396271EED1302009D91D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				DB7396251EED1302009D91D7 /* AppDelegate.swift */,
 				DB7396271EED1302009D91D7 /* ViewController.swift */,
 				DB7396411EF05720009D91D7 /* newViewController.swift */,
+				DB03EAB31EF855F1003A4254 /* animationViewController.swift */,
 				DB73963D1EED13DB009D91D7 /* app */,
 				DB7396291EED1302009D91D7 /* Main.storyboard */,
 				DB73962C1EED1302009D91D7 /* Assets.xcassets */,
@@ -174,6 +177,7 @@
 				DB7396281EED1302009D91D7 /* ViewController.swift in Sources */,
 				DB7396261EED1302009D91D7 /* AppDelegate.swift in Sources */,
 				DB7396421EF05720009D91D7 /* newViewController.swift in Sources */,
+				DB03EAB41EF855F1003A4254 /* animationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

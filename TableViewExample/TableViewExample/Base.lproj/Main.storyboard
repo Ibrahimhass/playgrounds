@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2yH-kb-B5d">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bbb View Controller-->
+        <scene sceneID="zh3-xE-ffG">
+            <objects>
+                <viewController id="2yH-kb-B5d" customClass="bbbViewController" customModule="TableViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FCu-vQ-i4l"/>
+                        <viewControllerLayoutGuide type="bottom" id="HnR-Gk-Jxv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="drX-Wd-mBI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nri-sF-ie5">
+                                <rect key="frame" x="86" y="269" width="404" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="g6W-CN-2Er"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderAction:" destination="2yH-kb-B5d" eventType="valueChanged" id="nZ5-vj-k1v"/>
+                                </connections>
+                            </slider>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MgE-Tm-Ci9">
+                                <rect key="frame" x="0.0" y="84" width="240" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="fRu-Ap-A50"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="rxy-hn-eZW" customClass="bbbCellTableViewCell" customModule="TableViewExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rxy-hn-eZW" id="aEe-xN-8sr">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qt7-6L-CWp">
+                                                    <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="q9a-AO-e0r"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qt7-6L-CWp" firstAttribute="leading" secondItem="aEe-xN-8sr" secondAttribute="leading" id="MP3-J4-mqw"/>
+                                                <constraint firstAttribute="bottom" secondItem="Qt7-6L-CWp" secondAttribute="bottom" constant="10" id="cJO-Ws-5TI"/>
+                                                <constraint firstItem="Qt7-6L-CWp" firstAttribute="top" secondItem="aEe-xN-8sr" secondAttribute="top" constant="10" id="mnz-Za-Nxf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hamraLabel" destination="Qt7-6L-CWp" id="VQe-F2-t5B"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2yH-kb-B5d" id="OdO-JX-Mtr"/>
+                                    <outlet property="delegate" destination="2yH-kb-B5d" id="Ifx-iQ-2Ef"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MgE-Tm-Ci9" firstAttribute="leading" secondItem="drX-Wd-mBI" secondAttribute="leading" id="6fb-Ca-0u5"/>
+                            <constraint firstItem="nri-sF-ie5" firstAttribute="centerX" secondItem="drX-Wd-mBI" secondAttribute="centerX" multiplier="1.8" id="Brp-SZ-RIq"/>
+                            <constraint firstItem="nri-sF-ie5" firstAttribute="centerY" secondItem="drX-Wd-mBI" secondAttribute="centerY" id="bcM-PF-1YV"/>
+                            <constraint firstItem="MgE-Tm-Ci9" firstAttribute="width" secondItem="drX-Wd-mBI" secondAttribute="width" multiplier="0.75" id="gAm-ZD-RQ0"/>
+                            <constraint firstItem="MgE-Tm-Ci9" firstAttribute="centerY" secondItem="drX-Wd-mBI" secondAttribute="centerY" id="qeT-aE-J9y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="nri-sF-ie5" id="NBS-Rw-zfN"/>
+                        <outlet property="tableView" destination="MgE-Tm-Ci9" id="Gkh-9G-Wxf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRp-Vb-Szw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2981.25" y="-207.04225352112675"/>
+        </scene>
+    </scenes>
+</document>

@@ -247,7 +247,7 @@ class getDocumentsDirectory1: NSObject{
         do {
             // Get the directory contents urls (including subfolders urls)
             let directoryContents = try FileManager.default.contentsOfDirectory(at: documentsUrl, includingPropertiesForKeys: nil, options: [])
-            print(directoryContents)
+//            print(directoryContents)
             
             // if you want to filter the directory contents you can do like this:
             let mp3Files = directoryContents.filter{ $0.pathExtension == "mp3" }
