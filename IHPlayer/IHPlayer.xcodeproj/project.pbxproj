@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		DB30129F1ED15918005684FF /* tableViewCell12.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB30129E1ED15918005684FF /* tableViewCell12.swift */; };
+		DB3DB35E1F2A41DE005D0277 /* 01 - Battlefield 3 Main Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB3DB35D1F2A41DE005D0277 /* 01 - Battlefield 3 Main Theme.mp3 */; };
 		DB6ADB101ECA04BD003082F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADB0F1ECA04BD003082F8 /* AppDelegate.swift */; };
 		DB6ADB121ECA04BD003082F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADB111ECA04BD003082F8 /* ViewController.swift */; };
 		DB6ADB151ECA04BD003082F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6ADB131ECA04BD003082F8 /* Main.storyboard */; };
 		DB6ADB171ECA04BD003082F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6ADB161ECA04BD003082F8 /* Assets.xcassets */; };
 		DB6ADB1A1ECA04BD003082F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6ADB181ECA04BD003082F8 /* LaunchScreen.storyboard */; };
+		DBEE4D1C1F28FA6200A1FFBB /* audioVisualiserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE4D1B1F28FA6200A1FFBB /* audioVisualiserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB30129E1ED15918005684FF /* tableViewCell12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewCell12.swift; sourceTree = "<group>"; };
+		DB3DB35D1F2A41DE005D0277 /* 01 - Battlefield 3 Main Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Battlefield 3 Main Theme.mp3"; sourceTree = "<group>"; };
 		DB6ADB0C1ECA04BD003082F8 /* IHPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IHPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6ADB0F1ECA04BD003082F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB6ADB111ECA04BD003082F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		DB6ADB161ECA04BD003082F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6ADB191ECA04BD003082F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB6ADB1B1ECA04BD003082F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEE4D1B1F28FA6200A1FFBB /* audioVisualiserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audioVisualiserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				DB6ADB0F1ECA04BD003082F8 /* AppDelegate.swift */,
 				DB6ADB111ECA04BD003082F8 /* ViewController.swift */,
+				DBEE4D1B1F28FA6200A1FFBB /* audioVisualiserViewController.swift */,
+				DB3DB35D1F2A41DE005D0277 /* 01 - Battlefield 3 Main Theme.mp3 */,
 				DB6ADB131ECA04BD003082F8 /* Main.storyboard */,
 				DB30129E1ED15918005684FF /* tableViewCell12.swift */,
 				DB6ADB161ECA04BD003082F8 /* Assets.xcassets */,
@@ -132,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3DB35E1F2A41DE005D0277 /* 01 - Battlefield 3 Main Theme.mp3 in Resources */,
 				DB6ADB1A1ECA04BD003082F8 /* LaunchScreen.storyboard in Resources */,
 				DB6ADB171ECA04BD003082F8 /* Assets.xcassets in Resources */,
 				DB6ADB151ECA04BD003082F8 /* Main.storyboard in Resources */,
@@ -147,6 +154,7 @@
 			files = (
 				DB6ADB121ECA04BD003082F8 /* ViewController.swift in Sources */,
 				DB6ADB101ECA04BD003082F8 /* AppDelegate.swift in Sources */,
+				DBEE4D1C1F28FA6200A1FFBB /* audioVisualiserViewController.swift in Sources */,
 				DB30129F1ED15918005684FF /* tableViewCell12.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

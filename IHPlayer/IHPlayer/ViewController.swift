@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import CoreMedia
 
-
+var index123 : Int = 0
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func webViewDidFinishLoad(_ webView: UIWebView) {
         let request = webView.request
@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var categoryError: NSError?
+
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
             print("AVAudioSession Category Playback OK")
@@ -115,38 +115,41 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let player = self.player{
-            let alert = UIAlertController(title: "Notice", message: "A file is already playing", preferredStyle: .alert)
-            let saveAction = UIAlertAction(title: "Save Time", style: .default) {
-                [unowned self] action in
-                self.savedFileNameAndTime[MusicArray.sharedInstance.fileName[indexPath.row]] = player.currentTime()
-                print (self.savedFileNameAndTime)
-                UserDefaults.standard.set(self.savedFileNameAndTime as [String:CMTime], forKey: "pendingItems")
-                print ("Save Current Time and fileName")
-            }
-            
-            let cancelAction = UIAlertAction(title: "Cancel",
-                                             style: .default)
-            
-            alert.addAction(saveAction)
-            alert.addAction(cancelAction)
-            
-            self.present(alert, animated: true)
-
-        }
+//        if let player = self.player{
+//            let alert = UIAlertController(title: "Notice", message: "A file is already playing", preferredStyle: .alert)
+//            let saveAction = UIAlertAction(title: "Save Time", style: .default) {
+//                [unowned self] action in
+//                self.savedFileNameAndTime[MusicArray.sharedInstance.fileName[indexPath.row]] = player.currentTime()
+//                print (self.savedFileNameAndTime)
+//                UserDefaults.standard.set(self.savedFileNameAndTime as [String:CMTime], forKey: "pendingItems")
+//                print ("Save Current Time and fileName")
+//            }
+//            
+//            let cancelAction = UIAlertAction(title: "Cancel",
+//                                             style: .default)
+//            
+//            alert.addAction(saveAction)
+//            alert.addAction(cancelAction)
+//            self.present(alert, animated: true)
+//
+//        }
         self.nextIndexToPlay = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
         self.nameFile.text = MusicArray.sharedInstance.fileName[indexPath.row]
    
-        updater = CADisplayLink(target: self, selector: Selector("trackAudio"))
-        updater.frameInterval = 1
-        updater.add(to: RunLoop.current, forMode: RunLoopMode.commonModes)
-        let playerItem = AVPlayerItem.init(url: (MusicArray.sharedInstance.filePath[indexPath.row]))
-        self.player = try AVPlayer(playerItem:playerItem)
-        print (self.player?.currentTime() ?? 0.0)
-        self.player?.volume = 1.0
-        self.player?.play()
+//        updater = CADisplayLink(target: self, selector: Selector("trackAudio"))
+//        updater.frameInterval = 1
+//        updater.add(to: RunLoop.current, forMode: RunLoopMode.commonModes)
+//        let playerItem = AVPlayerItem.init(url: (MusicArray.sharedInstance.filePath[indexPath.row]))
+//        myUrl = MusicArray.sharedInstance.filePath[indexPath.row]
+        index123 = indexPath.row
+        self.performSegue(withIdentifier: "musicViewSegue", sender: self)
+//        self.player = try AVPlayer(playerItem:playerItem)
+//        print (self.player?.currentTime() ?? 0.0)
+//        self.player?.volume = 1.0
+//        self.player?.play()
     }
+    
     func trackAudio() {
         let duration : CMTime = (self.player?.currentItem!.duration)!
         let seconds : Float64 = CMTimeGetSeconds(duration)
@@ -171,7 +174,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
     {
         let deleteAction = UITableViewRowAction(style: .default, title: "Delete") {action in
             //            //handle delete
