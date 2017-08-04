@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IHImageCropper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Cropper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgn-Uq-gq9">
+                                <rect key="frame" x="103" y="70" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZk-xO-tdh">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="KbB-MI-kX1"/>
+                                    <constraint firstAttribute="width" constant="320" id="lTL-dT-C53"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AS2-DT-Vgd">
+                                <rect key="frame" x="101" y="494" width="118" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Snj-ed-E6t"/>
+                                    <constraint firstAttribute="width" constant="118" id="W2V-Wg-jWE"/>
+                                </constraints>
+                                <state key="normal" title="Crop and Save"/>
+                                <connections>
+                                    <action selector="cropAndSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8h-9h-dPM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cZk-xO-tdh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BWZ-I1-Jyy"/>
+                            <constraint firstItem="cZk-xO-tdh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bSq-Ob-L1N"/>
+                            <constraint firstItem="Dgn-Uq-gq9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="ebs-aB-hIw"/>
+                            <constraint firstItem="AS2-DT-Vgd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mGi-Dq-L8v"/>
+                            <constraint firstItem="Dgn-Uq-gq9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rxN-7Y-3Yb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AS2-DT-Vgd" secondAttribute="bottom" constant="40" id="w3b-oY-xdy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="cZk-xO-tdh" id="mWW-Jm-OsV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

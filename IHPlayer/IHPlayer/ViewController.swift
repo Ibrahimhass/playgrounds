@@ -9,7 +9,20 @@
 import UIKit
 import AVFoundation
 import CoreMedia
-
+/*{
+ 
+ let url = Bundle.main.url(forResource: "Tere Liye Mere Kareem (DownloadMp3Song.Net) (320Kbps)", withExtension: "mp3")
+ let file = try! AVAudioFile(forReading: url!)
+ let format = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: file.fileFormat.sampleRate, channels: file.fileFormat.channelCount, interleaved: false)
+ print(file.fileFormat.channelCount)
+ let buf = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: UInt32(file.length))
+ try! file.read(into: buf)
+ 
+ readFile.arrayFloatValues = Array(UnsafeBufferPointer(start: buf.floatChannelData?[0], count:Int(buf.frameLength)))
+ 
+ //     print("floatArray \(readFile.arrayFloatValues)\n")
+ //self.waveFormView.setNeedsDisplay()
+ }*/
 var index123 : Int = 0
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func webViewDidFinishLoad(_ webView: UIWebView) {
