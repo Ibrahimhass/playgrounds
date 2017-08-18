@@ -65,32 +65,32 @@ class audioVisualiserViewController: UIViewController, AVAudioPlayerDelegate, MF
         {
             url = MusicArray.sharedInstance.filePath[index123]
         }
-        var arrayFloatValues:[Float] = []
-        let file = try! AVAudioFile(forReading: url!)
-        let format = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: file.fileFormat.sampleRate, channels: file.fileFormat.channelCount, interleaved: false)
-        let buf = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: UInt32(file.length))
-        try! file.read(into: buf)
-        print (arrayFloatValues.count)
-        var processingBuffer = [Float](repeating: 0.0,
-                                       count: Int(arrayFloatValues.count))
-        let sampleCount = vDSP_Length(arrayFloatValues.count)
-        arrayFloatValues = Array(UnsafeBufferPointer(start: buf.floatChannelData?[0], count:Int(buf.frameLength)))
-        let samplesPerPixel = Int(CGFloat(sampleCount) / 320)
-        let filter = [Float](repeating: 1.0 / Float(samplesPerPixel),
-                             count: Int(samplesPerPixel))
-        let downSampledLength = Int(arrayFloatValues.count / samplesPerPixel)
-        var downSampledData = [Float](repeating:0.0,
-                                      count:downSampledLength)
-        vDSP_desamp(processingBuffer,
-                    vDSP_Stride(samplesPerPixel),
-                    filter, &downSampledData,
-                    vDSP_Length(downSampledLength),
-                    vDSP_Length(samplesPerPixel))
+//        var arrayFloatValues:[Float] = []
+//        let file = try! AVAudioFile(forReading: url!)
+//        let format = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: file.fileFormat.sampleRate, channels: file.fileFormat.channelCount, interleaved: false)
+//        let buf = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: UInt32(file.length))
+//        try! file.read(into: buf)
+//        print (arrayFloatValues.count)
+//        var processingBuffer = [Float](repeating: 0.0,
+//                                       count: Int(arrayFloatValues.count))
+//        let sampleCount = vDSP_Length(arrayFloatValues.count)
+//        arrayFloatValues = Array(UnsafeBufferPointer(start: buf.floatChannelData?[0], count:Int(buf.frameLength)))
+//        let samplesPerPixel = Int(CGFloat(sampleCount) / 320)
+//        let filter = [Float](repeating: 1.0 / Float(samplesPerPixel),
+//                             count: Int(samplesPerPixel))
+//        let downSampledLength = Int(arrayFloatValues.count / samplesPerPixel)
+//        var downSampledData = [Float](repeating:0.0,
+//                                      count:downSampledLength)
+//        vDSP_desamp(processingBuffer,
+//                    vDSP_Stride(samplesPerPixel),
+//                    filter, &downSampledData,
+//                    vDSP_Length(downSampledLength),
+//                    vDSP_Length(samplesPerPixel))
         
         // print(" DOWNSAMPLEDDATA: \(downSampledData.count)")
         
         //convert [Float] to [CGFloat] array
-        points = downSampledData.map{CGFloat($0)}
+//        points = downSampledData.map{CGFloat($0)}
         
         /* let samplesPerPixel = Int(CGFloat(sampleCount) / 24000)
          let filter = [Float](repeating: 1.0 / Float(samplesPerPixel),
@@ -153,15 +153,16 @@ class audioVisualiserViewController: UIViewController, AVAudioPlayerDelegate, MF
         var intVal = floatVal
 //        print (intVal)
         if (intVal < -10){
-            let value = CGFloat(1 - CGFloat(abs(intVal))/CGFloat(200.0))
-            if (value != -1){
-                let value1 = CGFloat(-10.0) + value
-                intVal = Float(value1)
+//            let value = CGFloat(1 - CGFloat(abs(intVal))/CGFloat(200.0))
+//            if (value != -1){
+//                let value1 = CGFloat(-10.0) + value
+//                intVal = Float(value1)
+            intVal = -10.91
             }
-        }
+//        }
 //        print(10 - abs(intVal))
         let fromYPoint : CGFloat = (self.myView.contentSize.height / 23) * CGFloat(abs(intVal))
-        let toYPoint : CGFloat = (self.myView.contentSize.height / 23) * CGFloat(22 - abs(intVal))
+        let toYPoint : CGFloat = (self.myView.contentSize.height / 23) * CGFloat(23 - abs(intVal))
         aPath.move(to: CGPoint(x:xPoint , y: fromYPoint))
         aPath.addLine(to: CGPoint(x: xPoint, y: toYPoint))
         xPoint += 1.0

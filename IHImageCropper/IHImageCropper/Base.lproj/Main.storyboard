@@ -21,18 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Cropper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgn-Uq-gq9">
-                                <rect key="frame" x="103" y="70" width="114" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZk-xO-tdh">
-                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="KbB-MI-kX1"/>
-                                    <constraint firstAttribute="width" constant="320" id="lTL-dT-C53"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AS2-DT-Vgd">
                                 <rect key="frame" x="101" y="494" width="118" height="34"/>
@@ -49,10 +39,10 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cZk-xO-tdh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BWZ-I1-Jyy"/>
+                            <constraint firstItem="cZk-xO-tdh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="SPE-XD-lUJ"/>
                             <constraint firstItem="cZk-xO-tdh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bSq-Ob-L1N"/>
-                            <constraint firstItem="Dgn-Uq-gq9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="ebs-aB-hIw"/>
+                            <constraint firstItem="cZk-xO-tdh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="lwm-Zq-saZ"/>
                             <constraint firstItem="AS2-DT-Vgd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mGi-Dq-L8v"/>
-                            <constraint firstItem="Dgn-Uq-gq9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rxN-7Y-3Yb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AS2-DT-Vgd" secondAttribute="bottom" constant="40" id="w3b-oY-xdy"/>
                         </constraints>
                     </view>
@@ -62,6 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="114.375" y="120.4225352112676"/>
         </scene>
     </scenes>
 </document>
